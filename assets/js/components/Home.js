@@ -7,10 +7,10 @@ Vue.component('Home',{
         <div class="containerr">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <h1>MorangeSoft</h1>
-                    <p class="mt-5" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, accusantium
+                    <h1 data-aos="zoom-in">MorangeSoft</h1>
+                    <p class="mt-5" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, accusantium
                         voluptatibus? Deleniti, ad pariatur!</p>
-                    <button  class="btn btn-moran px-5 mt-4" style="background: #fff;">
+                    <button data-aos="flip-up" class="btn btn-moran px-5 mt-4" style="background: #fff;">
                         vamos!
                     </button>
                 </div>
