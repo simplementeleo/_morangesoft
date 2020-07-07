@@ -11,11 +11,11 @@ Vue.component('Footering', {
     <div class="content py-5 text-white">
         <div class="containerr">
             <div class="row justify-content-center">
-                <div class="col-md-4 col-sm-12" data-aos="fade-down-right">
+                <div class="col-md-4 col-sm-12" >
                     <h3 class="my-5">MorangeSoft</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, optio!</p>
                 </div>
-                <div class="col-md-4 col-sm-12" data-aos="fade-up-right">
+                <div class="col-md-4 col-sm-12" >
                     <h3 class="my-5">Productos</h3>
                     <button href="https://www.sacomicita.com" target="_blank"
                         class="btn btn-more rounded-pill px-4 py-2"
@@ -34,7 +34,7 @@ Vue.component('Footering', {
                     </button>
 
                 </div>
-                <div class="col-md-4 col-sm-12" data-aos="fade-down-left">
+                <div class="col-md-4 col-sm-12" >
                     <h3 class="my-5">Contáctanos</h3>
                     <div class="icon d-flex mb-2">
                         <img src="./assets/img/mail.svg" class="mr-3" alt="mail">
