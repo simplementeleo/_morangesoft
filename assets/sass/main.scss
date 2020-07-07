@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
+// sass -watch assets/sass:assets/css
 .containerr {
     padding: 0 15%;
 
@@ -11,22 +13,53 @@
     }
 }
 
-// sass -watch assets/sass:assets/css
+$main-color: #3f51cd;
 
-// Nav
+// Helpers
+.btn-moran {
+    border: 2px solid $main-color !important;
+    color: $main-color !important;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    box-shadow: 1px 1px 10px #343a404f;
+}
+
+.btn-more {
+    border: .5px solid $main-color !important;
+    color: $main-color !important;
+    text-transform: uppercase;
+
+    &.two {
+        border: .5px solid #e516a7 !important;
+        color: #e516a7 !important;
+    }
+}
+
+
+.guion {
+    height: 4px;
+    width: 40px;
+    border-radius: 5px;
+    background: $main-color;
+    box-shadow: 1px 1px 10px #3f52cda4
+}
+
+
+
+// ----- Nav
 .nav-link {
     text-transform: uppercase;
 
-    color: #3f51cd;
+    color: $main-color;
 
     &:hover {
-        color: #3f51cd;
+        color: $main-color;
     }
 
 }
 
 .item-product {
-    background: #3f51cd;
+    background: $main-color;
     border-radius: 50px;
     box-shadow: 1px 1px 13px #3f52cd94;
     font-weight: bold;
@@ -40,34 +73,339 @@
     }
 }
 
+.toggle {
+    div{
+        width: 40px;
+        height: 4px;
+        border-radius: 4px;
+        background: rgb(141, 138, 138);
+        margin-bottom: 8px;
+        &:nth-of-type(2){
+            width: 30px;
+        }
+        &:nth-of-type(3){
+            width: 10px;
+        }
+    }
+}
 
-// Home
+
+// ----- Home
+$font: 630px;
 
 .main-home {
     position: relative;
-
     background: url('../img/bg.jpg') no-repeat;
-    background-size: 100%;
-    background-position:  bottom;
-    // background-attachment: fixed;
-
+    background-size: 100% 100%;
+    background-position: bottom;
     height: 90vh;
-    display: flex;
 
-    // align-items: center;
-    .text-home {
-        position: absolute;
-        // top: 10vh;
-        z-index: 1;
-        width: 100%;
-        margin-top: 20vh;
+    @media(max-width: 859px) {
+        background-size: 100%;
     }
 
-    // .img-home {
-    //     position: fixed;
-    //     z-index: 0;
-    //     width: 100%;
-    //     // object-fit: cover;
+    .text-home {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        margin-top: 10vh;
 
-    // }
+        h1 {
+            font-size: 5em;
+            color: $main-color;
+            @media(max-width: $font) {
+                font-size: 2.4em;
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+
+            @media(max-width: $font) {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+
+// ----- main-somos
+
+.main-somos {
+    h1 {
+        color: $main-color;
+    }
+
+    // -- Somos
+    .image-border-somos {
+        position: relative;
+
+        img {
+            box-shadow: 1px 1px 15px #d2d8df4f;
+            z-index: -1;
+        }
+
+        .border {
+            position: absolute;
+            border: 8px solid #3f51cdb0 !important;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            top: 15px;
+            left: 15px;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+
+            border: 3px dashed rgba(75, 73, 170, 0.53);
+            width: 20vh;
+            height: 20vh;
+            right: 0%;
+            top: -40%;
+
+            @media (max-width: 480px) {
+                width: 8vh;
+                height: 8vh;
+            }
+
+
+            &:nth-of-type(2) {
+                width: 40vh;
+                height: 40vh;
+                border: 3px dashed rgba(255, 0, 0, 0.336);
+                left: -20%;
+                top: 70%;
+                z-index: -1;
+
+                @media (max-width: 480px) {
+                    width: 30vh;
+                    height: 30vh;
+                }
+            }
+        }
+
+
+    }
+}
+
+// Servicio 1 
+.image-border-service-1 {
+    position: relative;
+
+    img {
+        box-shadow: 1px 1px 25px #0c18be7e;
+        z-index: -1;
+    }
+
+    .border {
+        position: absolute;
+        border: 8px solid #3f51cdb0 !important;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        top: 15px;
+        left: 15px;
+    }
+
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+
+        border: 3px dashed rgba(75, 73, 170, 0.53);
+        width: 20vh;
+        height: 20vh;
+        right: 100%;
+        top: 100%;
+
+        @media (max-width: 480px) {
+            width: 8vh;
+            height: 8vh;
+        }
+
+
+        &:nth-of-type(2) {
+            width: 20vh;
+            height: 20vh;
+            border: 3px dashed rgba(255, 0, 0, 0.336);
+            right: 0%;
+            top: -20%;
+            z-index: -1;
+
+            @media (max-width: 480px) {
+                width: 10vh;
+                height: 10vh;
+            }
+        }
+    }
+
+
+}
+
+// Servicio 2
+.image-border-service-2 {
+    position: relative;
+
+    img {
+        box-shadow: 1px 1px 25px #6aeffe94;
+        z-index: -1;
+    }
+
+    .border {
+        position: absolute;
+        border: 8px solid #3fedffc2 !important;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        top: 15px;
+        left: 15px;
+    }
+
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+
+        border: 3px dashed #ad5dce57;
+        width: 20vh;
+        height: 20vh;
+        right: 80%;
+        top: 60%;
+
+        @media (max-width: 480px) {
+            width: 8vh;
+            height: 8vh;
+        }
+
+
+        &:nth-of-type(2) {
+            width: 40vh;
+            height: 40vh;
+            border: 3px dashed rgba(39, 165, 204, 0.336);
+            right: 0%;
+            top: -20%;
+            z-index: -1;
+
+            @media (max-width: 480px) {
+                width: 10vh;
+                height: 10vh;
+            }
+        }
+    }
+
+
+}
+
+
+// Producto 1
+.image-border-product-1 {
+    position: relative;
+
+    img {
+        box-shadow: 1px 1px 25px #3f5fffba;
+        z-index: -1;
+    }
+
+    .border {
+        position: absolute;
+        border: 8px solid #0008ff6e !important;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        top: 15px;
+        left: 15px;
+    }
+
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+
+        border: 3px dashed #ad5dce57;
+        width: 20vh;
+        height: 20vh;
+        right: 80%;
+        top: 60%;
+
+        @media (max-width: 480px) {
+            width: 8vh;
+            height: 8vh;
+        }
+
+
+        &:nth-of-type(2) {
+            width: 40vh;
+            height: 40vh;
+            border: 3px dashed rgba(39, 165, 204, 0.336);
+            right: 0%;
+            top: -20%;
+            z-index: -1;
+
+            @media (max-width: 480px) {
+                width: 10vh;
+                height: 10vh;
+            }
+        }
+    }
+
+
+}
+
+// Producto 2
+.image-border-product-2 {
+    position: relative;
+
+    img {
+        box-shadow: 1px 1px 25px #fff7006b;
+        z-index: -1;
+    }
+
+    .border {
+        position: absolute;
+        border: 8px solid #424016db !important;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        top: 15px;
+        left: 15px;
+    }
+
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+
+        border: 3px dashed #bd2130b8;
+        width: 20vh;
+        height: 20vh;
+        right: 0%;
+        top: 80%;
+
+        @media (max-width: 480px) {
+            width: 8vh;
+            height: 8vh;
+        }
+
+
+        &:nth-of-type(2) {
+            width: 40vh;
+            height: 40vh;
+            border: 3px dashed rgba(39, 165, 204, 0.288);
+            right: 60%;
+            top: -20%;
+            z-index: -1;
+
+            @media (max-width: 480px) {
+                width: 10vh;
+                height: 10vh;
+            }
+        }
+    }
+
+
+}
+
+
+footer{
+    .content {
+        background: #0e225e;
+    }
 }

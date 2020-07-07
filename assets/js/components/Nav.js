@@ -4,25 +4,25 @@ Vue.component('Navigation', {
     <div>
         <header>
         <nav class="navbar navbar-expand-md  py-3">
-        <div class="mx-auto order-1">
-                <span class="navbar-brand mb-0 h1">MorageSoft</span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
+        <div class="mx-auto order-2">
+                <span class="navbar-brand mb-0 h1"></span>
+            <button style="position: absolute; left: 5%;" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span  class="navbar-toggler-icon"><div class="toggle"><div></div><div></div><div></div></div></span>
             </button>
         </div>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link px-4" href="#">Inicio</a>
+                    <a class="nav-link px-4" href="#home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-4" href="#">¿Quienes Somos?</a>
+                    <a class="nav-link px-4" href="#weare">¿Quienes Somos?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-4" href="#">Servicios</a>
+                    <a class="nav-link px-4" href="#services">Servicios</a>
                 </li>
                 <li class="nav-item item-product">
-                    <a class="nav-link px-4" href="#">Productos</a>
+                    <a class="nav-link px-4" href="#products">Productos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link px-4" href="#">Contáctanos</a>
