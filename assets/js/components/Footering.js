@@ -21,12 +21,12 @@ Vue.component('Footering', {
                         class="btn btn-more rounded-pill px-4 py-2"
                         style="background: none; text-transform: uppercase; color: #25a2d2 !important;">
                         sacomicita
-                    </button>
+                    </button> <br>
                     <button href="https://www.pagatucomra.com" target="_blank"
                         class="btn btn-more rounded-pill mt-3 px-4 py-2"
                         style="background:none; text-transform: uppercase; color: #ffc107 !important;">
                         pagatucompra
-                    </button>
+                    </button><br>
                     <button href="https://www.pagatucomra.com" target="_blank"
                         class="btn btn-more rounded-pill mt-3 px-4 py-2"
                         style="background: none; text-transform: uppercase; color: #25d232 !important;">
