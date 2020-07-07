@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.containerr {
+    padding: 0 15%;
+
+    @media (max-width: 340px) {
+        padding: 0 5%;
+    }
+}
+
+// sass -watch assets/sass:assets/css
+
+// Nav
+.nav-link {
+    text-transform: uppercase;
+
+    color: #3f51cd;
+
+    &:hover {
+        color: #3f51cd;
+    }
+
+}
+
+.item-product {
+    background: #3f51cd;
+    border-radius: 50px;
+    box-shadow: 1px 1px 13px #3f52cd94;
+    font-weight: bold;
+
+    a {
+        color: white;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+
+// Home
+
+.main-home {
+    position: relative;
+
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: 100%;
+    background-position:  bottom;
+    // background-attachment: fixed;
+
+    height: 90vh;
+    display: flex;
+
+    // align-items: center;
+    .text-home {
+        position: absolute;
+        // top: 10vh;
+        z-index: 1;
+        width: 100%;
+        margin-top: 20vh;
+    }
+
+    // .img-home {
+    //     position: fixed;
+    //     z-index: 0;
+    //     width: 100%;
+    //     // object-fit: cover;
+
+    // }
+}

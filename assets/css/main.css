@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.containerr {
+  padding: 0 15%;
+}
+@media (max-width: 340px) {
+  .containerr {
+    padding: 0 5%;
+  }
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: #3f51cd;
+}
+.nav-link:hover {
+  color: #3f51cd;
+}
+
+.item-product {
+  background: #3f51cd;
+  border-radius: 50px;
+  box-shadow: 1px 1px 13px #3f52cd94;
+  font-weight: bold;
+}
+.item-product a {
+  color: white;
+}
+.item-product a:hover {
+  color: white;
+}
+
+.main-home {
+  position: relative;
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  height: 90vh;
+  display: flex;
+}
+.main-home .text-home {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin-top: 20vh;
+}
+
+/*# sourceMappingURL=main.css.map */
