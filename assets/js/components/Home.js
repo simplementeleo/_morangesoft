@@ -2,7 +2,7 @@ Vue.component('Home',{
     template: //html
     `
     <div>
-            <div class="main-home">
+        <div class="main-home">
             <div class="text-home">
                 <div class="containerr">
                     <div class="row">
