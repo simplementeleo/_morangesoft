@@ -38,9 +38,7 @@ Vue.component('Services', {
                                 <h2 class="py-3" data-aos="zoom-in">Marketing Digital</h2>
                                 <div class="guion my-3"
                                     style="background: #3fedff;box-shadow: rgba(63, 237, 255, 0.76) 1px 1px 10px"></div>
-                                <p class="my-3" data-aos="fade" >Hacer realidad tus ideas, desde lo más simple a lo más complejo. Desarrollo software a
-                                medida. Sistemas web y aplicaciones móviles totalmente escalables para empresas y
-                                startups desde cero.</p>
+                                <p class="my-3" data-aos="fade" >Hacer realidad tus ideas, desde lo más simple a lo más complejo. Desarrollo software a medida. Sistemas web y aplicaciones móviles totalmente escalables para empresas y startups desde cero.</p>
                         </div>
                     </div>
                 </div>

@@ -24,8 +24,7 @@ Vue.component('Products',{
                             <h2 class="py-3" data-aos="fade-down-right" data-aos-anchor-placement="top-center">Saco mi cita</h2>
                             <div class="guion my-3"></div>
                             <p class="my-3" data-aos="fade-down-right" data-aos-anchor-placement="top-center">
-                                Servicio de telemedicina para clínicas y pacientes en general. Interconectamos
-                                médicos, clínicas y pacientes de diferentes partes del mundo.
+                            Servicio de telemedicina para clínicas y pacientes en general. Interconectamos médicos, clínicas y pacientes de diferentes partes del mundo.
                             </p>
                             <button  href="https://www.sacomicita.com" target="_blank" class="btn btn-more px-3 my-4">
                                 más información
@@ -47,10 +46,7 @@ Vue.component('Products',{
                             <div class="guion my-3"
                                 style="background: #e516a7;box-shadow: #e516a7 1px 1px 10px"></div>
                             <p class="my-3" data-aos="flip-right" data-aos-anchor-placement="top-center">
-                                Es una iniciativa que brinda herramientas publicitarias a pequeñas y medianas
-                                empresas que de otra manera no podrian acceder a estos servicios.
-                                Interconectamos
-                                negocios con clientes de diferentes partes del mundo.
+                            Es una iniciativa que brinda herramientas publicitarias a pequeñas y medianas empresas que de otra manera no podrian acceder a estos servicios. Interconectamos negocios con clientes de diferentes partes del mundo.
                             </p>
                             <button href="https://www.pagatucompra.com" target="_blank" class="btn btn-more two px-3 my-4">
                                     más información

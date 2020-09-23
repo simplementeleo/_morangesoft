@@ -15,7 +15,7 @@ Vue.component('Weare',{
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 col-sm-12 mt-5 text-center" data-aos="zoom-in">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis veniam in, eum sapiente iure aperiam voluptate iste natus beatae dignissimos, nobis, accusantium asperiores? Aut ea consequuntur doloremque ipsa ipsum?
+                Somos un equipo de profesionales altamente capacitados para con diferentes habilidades en programacion y UX design
                 </div>
             </div>
         </div>

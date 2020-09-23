@@ -38,11 +38,11 @@ Vue.component('Footering', {
                     <h3 class="my-5">Contáctanos</h3>
                     <div class="icon d-flex mb-2">
                         <img src="./assets/img/mail.svg" class="mr-3" alt="mail">
-                        <span>correo@correo.com</span>
+                        <span>info@morangesoft.com</span>
                     </div>
                     <div class="icon d-flex my-2">
                         <img src="./assets/img/call.svg" class="mr-3" alt="call">
-                        <span>+ 00 - 000 - 0000</span>
+                        <span>+ 51 - 990 148 228&nbsp;+34 637 75 64 50</span>
                     </div>
                     <h5 class="my-3">Síguenos en</h5>
                     <div class="d-flex">
