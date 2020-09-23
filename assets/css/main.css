@@ -347,4 +347,19 @@ footer .content {
   background: #0e225e;
 }
 
+.swiper-pagination .swiper-pagination-bullet {
+  background: #3f51cd;
+  width: 8px;
+  height: 4px;
+  display: inline-block;
+  border-radius: none !important;
+}
+
+.modal {
+  background: #000;
+}
+.modal .modal-content {
+  background: #f21fda;
+}
+
 /*# sourceMappingURL=main.css.map */

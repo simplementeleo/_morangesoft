@@ -409,3 +409,23 @@ footer{
         background: #0e225e;
     }
 }
+
+// Details bullets active - Carousel pagination
+.swiper-pagination {
+    .swiper-pagination-bullet{
+        background: $main-color;
+        width: 8px ;
+        height: 4px ;
+        display: inline-block;
+        border-radius: none !important;
+    }
+}
+
+// View projects
+.modal {
+    background: #000;
+    .modal-content {
+        background: #f21fda;
+        
+    }
+}
