@@ -30,11 +30,11 @@ Vue.component('Services', {
         </div>
 
         <!-- Carousel - Development Web -->
-        <div class="row">
+        <div class="row" data-aos="zoom-in">
             <div class="col-md-12 mt-4">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div  v-for="(item, index) of img"  class="swiper-slide"  @click="viewProject(item.data)" data-toggle="modal" data-target="#action" :style="{ 'background-image': 'url('+item.imgMain+')'}"></div>
+                    <div  v-for="(item, index) of developmentWeb"  class="swiper-slide"  @click="viewProject(item.data)" data-toggle="modal" data-target="#action" :style="{ 'background-image': 'url('+item.imgMain+')'}"></div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -65,6 +65,22 @@ Vue.component('Services', {
                 </div>
             </div>
         </div>
+
+         <!-- Carousel - Development Web -->
+         <div class="row" data-aos="zoom-in">
+            <div class="col-md-12 mt-4">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div  v-for="(item, index) of marketing"  class="swiper-slide"  @click="viewProject(item.data)" data-toggle="modal" data-target="#action" :style="{ 'background-image': 'url('+item.imgMain+')'}"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 
 
@@ -80,24 +96,49 @@ Vue.component('Services', {
 
                 <div class="modal-body container-fluid">
 
-
-                    <h1>{{ project.title }} </h1>
                     <div class="row">
 
                         <img :src="project.image" alt="" class="col-sm-12" style="clip-path: ellipse(72% 89% at 52% 9%);">
                         
-                        <div class="col-sm-12 my-3">
-                            <p class="text-center"> {{ project.text }} </p>
+                        <div class="col-sm-12 my-5">
+                            <h1 class="text-center">{{ project.title }} </h1>
+                            <p class="text-center px-3"> {{ project.text }} </p>
                         </div>
                         
-                        <div style="text-align: center;">
-                            <iframe style="border-radius: 20px; margin: 0 auto; display: block;" width="480" height="315" :src="project.video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div style="text-align: center; position: relative; width: 100%; height: 100%;">
+                            <iframe width="560" height="315" :src="project.video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+
+                        <div class="col-sm-12 contact mt-5">
+                            <div class="container content py-5 px-5">
+                                <h4 class="text-center my-5">¿Te interesa? ¡Contáctanos!</h4>
+                                <form @submit.prevent="form(dataForm)">
+                                    <div class="form-group">
+                                        <label for="cel">Número telefónico</label>
+                                        <input type="text" class="form-control" id="cel" placeholder="+00 000 000" v-model="dataForm.cel" requerid autocomplete="off">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Correo</label>
+                                        <input type="email" class="form-control" id="name" placeholder="email@email.com" v-model="dataForm.email" requerid autocomplete="off">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Nombre</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Joe Kigman" v-model="dataForm.name" requerid autocomplete="off">
+                                    </div>
+                                    <button type="submit" class="btn btn-block mx-auto my-5">
+                                        Enviar
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+
 
 
                     </div>
 
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+
 
 
                 </div>
@@ -116,11 +157,11 @@ Vue.component('Services', {
     `,
     data() {
         return {
-            img: [
+            developmentWeb: [
                 {
                     imgMain: './assets/img/servicio-2.png',
                     data: {
-                        titleProject: 'Title 1',
+                        title: 'Title 1',
                         image: './assets/img/servicio-2.png',
                         text: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam non, quod fugiat quae quos, eligendi sunt ea dolore et maiores nobis voluptatibus. Repellendus quos accusantium facere aperiam, architecto laudantium velit.',
                         video: 'https://www.youtube.com/embed/wxds6MAtUQ0'
@@ -129,7 +170,7 @@ Vue.component('Services', {
                 {
                     imgMain: './assets/img/servicio-1.png',
                     data: {
-                        titleProject: 'Title 2',
+                        title: 'Title 2',
                         image: './assets/img/servicio-1.png',
                         text: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam non, quod fugiat quae quos, eligendi sunt ea dolore et maiores nobis voluptatibus. Repellendus quos accusantium facere aperiam, architecto laudantium velit.',
                         video: 'https://www.youtube.com/embed/wxds6MAtUQ0'
@@ -138,21 +179,53 @@ Vue.component('Services', {
                 {
                     imgMain: './assets/img/servicio-2.png',
                     data: {
-                        titleProject: 'Title 3',
+                        title: 'Title 3',
                         image: './assets/img/servicio-2.png',
                         text: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam non, quod fugiat quae quos, eligendi sunt ea dolore et maiores nobis voluptatibus. Repellendus quos accusantium facere aperiam, architecto laudantium velit.',
                         video: 'https://www.youtube.com/embed/wxds6MAtUQ0'
                     }
                 },
             ],
-            project: {}
+            marketing: [
+                {
+                    imgMain: './assets/img/servicio-2.png',
+                    data: {
+                        title: 'Marketing 1',
+                        image: './assets/img/servicio-2.png',
+                        text: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam non, quod fugiat quae quos, eligendi sunt ea dolore et maiores nobis voluptatibus. Repellendus quos accusantium facere aperiam, architecto laudantium velit.',
+                        video: 'https://www.youtube.com/embed/ZSkZs_OtkkQ'
+                    }
+                },
+                {
+                    imgMain: './assets/img/servicio-1.png',
+                    data: {
+                        title: 'Marketing 2',
+                        image: './assets/img/servicio-1.png',
+                        text: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam non, quod fugiat quae quos, eligendi sunt ea dolore et maiores nobis voluptatibus. Repellendus quos accusantium facere aperiam, architecto laudantium velit.',
+                        video: 'https://www.youtube.com/embed/ZSkZs_OtkkQ'
+                    }
+                },
+                {
+                    imgMain: './assets/img/servicio-2.png',
+                    data: {
+                        title: 'Marketing 3',
+                        image: './assets/img/servicio-2.png',
+                        text: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam non, quod fugiat quae quos, eligendi sunt ea dolore et maiores nobis voluptatibus. Repellendus quos accusantium facere aperiam, architecto laudantium velit.',
+                        video: 'https://www.youtube.com/embed/ZSkZs_OtkkQ'
+                        
+                    }
+                },
+            ],
+            project: {},
+            dataForm: {}
         }
     },
     methods: {
         viewProject(data) {
             this.project = data
-            console.log(this.project)
-
+        },
+        form(dataForm){
+            console.log(dataForm)
         }
     }
 

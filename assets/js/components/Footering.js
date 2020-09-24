@@ -1,5 +1,5 @@
 Vue.component('Footering', {
-    template: //html
+    template: /*html*/
     `
     <footer>
     <div style="height: 150px; overflow: hidden;">
@@ -42,7 +42,11 @@ Vue.component('Footering', {
                     </div>
                     <div class="icon d-flex my-2">
                         <img src="./assets/img/call.svg" class="mr-3" alt="call">
-                        <span>+ 51 - 990 148 228&nbsp;+34 637 75 64 50</span>
+                        <span>+51 - 990 148 228</span>
+                    </div>
+                    <div class="icon d-flex my-2">
+                        <img src="./assets/img/whatsapp.svg" width="20" class="mr-3" alt="call">
+                        <span>+34 - 637 75 64 50</span>
                     </div>
                     <h5 class="my-3">Síguenos en</h5>
                     <div class="d-flex">

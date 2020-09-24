@@ -1,11 +1,13 @@
 Vue.component('Navigation', {
-    template: //html
+    template: /*html*/
     `
     <div>
         <header>
         <nav class="navbar navbar-expand-md  py-3">
         <div class="mx-auto order-2">
-                <span class="navbar-brand mb-0 h1"></span>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/icon.png" width="30" class="ml-3" alt="">
+                </a>
             <button style="position: absolute; left: 5%;" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                 <span  class="navbar-toggler-icon"><div class="toggle"><div></div><div></div><div></div></div></span>
             </button>
