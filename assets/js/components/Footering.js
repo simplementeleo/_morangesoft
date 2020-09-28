@@ -1,7 +1,7 @@
 Vue.component('Footering', {
     template: /*html*/
     `
-    <footer>
+    <footer id="f">
     <div style="height: 150px; overflow: hidden;">
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
             <path d="M-131.78,-55.97 C231.66,196.67 256.49,177.92 574.21,-16.48 L500.00,150.00 L0.00,150.00 Z"

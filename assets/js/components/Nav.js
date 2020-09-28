@@ -1,4 +1,5 @@
 Vue.component('Navigation', {
+    props: ['data'],
     template: /*html*/
     `
     <div>
@@ -14,26 +15,20 @@ Vue.component('Navigation', {
         </div>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link px-4" href="#home">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4" href="#weare">¿Quienes Somos?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4" href="#services">Servicios</a>
-                </li>
-                <li class="nav-item item-product">
-                    <a class="nav-link px-4" href="#products">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4" href="#">Contáctanos</a>
-                </li>
+                <li v-for="item of nav" :class="['nav-item', {'item-product': item.active}]">
+                    <a class="nav-link px-4" :href="item.url">  {{ item.name }} </a>
+                </li> 
             </ul>
         </div>
     </nav>
         </header>
     </div>
     `,
+    
+    data(){
+        return {
+            nav: this.data
+        }
+    }
    
-})
+});

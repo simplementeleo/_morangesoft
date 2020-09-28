@@ -71,7 +71,17 @@ Vue.component('Home',{
     },
     methods: {
         form(dataForm){
-            console.log(dataForm)
+            let val = Object.values(dataForm);
+            if (val.length > 2) {
+                console.log(dataForm)
+            }else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Se requiere llenar todos los campos',
+                });
+            }
         }
-    }
+    },
+    
 })

@@ -5,31 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MorangeSoft</title>
+    <title>MorangeSoft | Blog</title>
     <link rel="shortcut icon" href="./assets/img/icon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/js/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="./assets/js/components/Nav.js"></script>
-    <script src="./assets/js/components/Home.js"></script>
-    <script src="./assets/js/components/Weare.js"></script>
-    <script src="./assets/js/components/Services.js"></script>
-    <script src="./assets/js/components/Products.js"></script>
+    <script src="./assets/js/components/blog/Blogmain.js"></script>
+    <script src="./assets/js/components/blog/Blogbanner.js"></script>
+    <script src="./assets/js/components/blog/Articleview.js"></script>
     <script src="./assets/js/components/Footering.js"></script>
+
 
 </head>
 
 <body>
     <div id="app">
-        <Navigation :data="navMain"></Navigation>
-        <Home id="home"></Home>
-        <Weare id="weare"></Weare>
-        <Services id="services"></Services>
-        <Products id="products"></Products>
+        <Navigation :data="navBlog"></Navigation>
+        <Blogmain></Blogmain>
+        <Blogbanner></Blogbanner>
+        <Articleview></Articleview>
         <Footering></Footering>
     </div>
 
@@ -37,7 +37,6 @@
     </div>
     <script src="./assets/js/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -47,15 +46,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="./assets/js/app.js"></script>
-    <script>
-        var typed = new Typed('#WebDevelopment', {
-            strings: ['Web', 'Móviles', 'de Escritorio'],
-            loop: true,
-            typeSpeed: 50
-        });
-    </script>
 </body>
 
 </html>
