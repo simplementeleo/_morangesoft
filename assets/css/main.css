@@ -542,6 +542,14 @@ footer .content {
   border-radius: 10px;
   margin: 0 auto;
   display: block;
+  width: 560px;
+  height: 315px;
+}
+@media (max-width: 991px) {
+  .modal .modal-content iframe {
+    width: 80%;
+    height: 100%;
+  }
 }
 .modal .modal-content .contact {
   width: 100%;

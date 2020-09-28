@@ -456,6 +456,12 @@ footer {
             border-radius: 10px;
             margin: 0 auto;
             display: block;
+            width: 560px;
+            height: 315px;
+            @media(max-width: 991px){
+                width: 80%;
+                height: 100%;
+            }
         }
 
         .contact {

@@ -106,7 +106,7 @@ Vue.component('Services', {
                         </div>
                         
                         <div style="text-align: center; position: relative; width: 100%; height: 100%;">
-                            <iframe width="560" height="315" :src="project.video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  :src="project.video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
 
                         <div class="col-sm-12 contact mt-5">
